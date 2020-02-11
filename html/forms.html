@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+<body>
+    <!-- Forms are meant to collect data.
+    The form tag is a structural tag which defines all
+    input related elements within it as part of a single
+    form - meaning that values placed on those input elements
+    will be submitted together -->
+
+    <form>
+        <!-- The input tag is a broad category of input elements
+            that are defined by a type attribute. The input
+            from the user is represented by the value. So you
+            can set a default value using the value attribute. -->
+        <h1>Login</h1>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
+        <input type="color">
+        <input type="file">
+        <input type="date">
+
+        <fieldset>
+            <legend>Favorite Fruit</legend>
+            <label for="radio-kiwi">Kiwi</label>
+            <input id="radio-kiwi" type="radio" name="favorite-fruit" value="kiwi">
+            <label for="radio-banana">Banana</label>
+            <input id="radio-banana" type="radio" name="favorite-fruit" value="banana">
+            <label for="radio-apple">Apple</label>
+            <input id="radio-apple" type="radio" name="favorite-fruit" value="apple">
+            <label for="radio-orange">Orange</label>
+            <input id="radio-orange" type="radio" name="favorite-fruit" value="orange">
+        </fieldset>
+
+        <fieldset>
+            <legend>Liked Fruit</legend>
+            <label for="check-kiwi">Kiwi</label>
+            <input name="liked-fruit" id="check-kiwi" type="checkbox">
+            <label for="check-banana">Banana</label>
+            <input name="liked-fruit" id="check-banana" type="checkbox">
+            <label for="check-apple">Apple</label>
+            <input name="liked-fruit" id="check-apple" type="checkbox">
+            <label for="check-orange">Orange</label>
+            <input name="liked-fruit" id="check-orange" type="checkbox">
+        </fieldset>
+
+        <select name="drop-down-fruit">
+            <option value="apple">Apple</option>
+            <option value="banana">Banana</option>
+            <option value="kiwi">Kiwi</option>
+            <option value="orange">Orange</option>
+        </select>
+    </form>
+</body>
+</html>
