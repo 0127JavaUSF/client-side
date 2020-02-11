@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+    <link rel="stylesheet" href="./style.css">
+    <!-- Emmet abbreviation: link:css -->
+    <style>
+        #style-tag {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS - Cascading Style Sheets</h1>
+    <p>Cascading style sheets are a technology used to add styling details to 
+        a website. Prior to CSS styling had to be done directly on tags and it was
+        gross. There are three locations in which styling can be defined.</p>
+        <ol>
+            <li>Inline</li>
+            <li>Style tag</li>
+            <li>External style sheet</li>
+        </ol>
+
+        <section>
+            <h2 style="color: red">Inline</h2>
+            <p>Inline styles were the original method of providing styling
+                metadata to elements. They are applied directly on the tag.
+                Inline styles have several disadvantages. First, they clutter
+                and mix HTML declaration with styling. This can make it difficult
+                to easily parse both HTML and styling data. Additionally, as styles
+                have to be applied on every tag, they're not reusable and often 
+                resulted in inconsistent design. However, inline styles have the
+                highest priority. Inline styles are not recommended.</p>
+        </section>
+
+        <section>
+            <h2 id="style-tag">Style Tag</h2>
+            <p>Style tags are the first kind of real CSS. The style tag allows us
+                to define styling rules in a tag within the document head. Unlike
+                the inline styles, styles defined in the style tag require a selector
+                to define what tags they affect. This makes them more flexible and
+                reusable. However, as it's still within a tag, it's limited to a single
+                HTML page, which restricts its reusability in modern webdesign which
+                more often focuses on larger websites or web applications. The style tag
+                has the second highest priority after inline.
+            </p>
+        </section>
+
+        <section>
+            <h2 id="external">External Style Sheet</h2>
+            <p>External style sheets use a dedicated .css document which is
+                linked to the .html document to define styling rules. Because many
+                .html documents can reference the same .css sheet, this brings 
+                several advantages.  First, it is reusability across many pages
+                making it easier for us to maintain our styling rules on a large
+                site. Secondly, because its reusable, the document can be cached
+                to prevent additional traffic that would otherwise be used to
+                load the same rules on each page. Has the lowest priority of other
+                options.
+            </p>
+        </section>
+</body>
+</html>

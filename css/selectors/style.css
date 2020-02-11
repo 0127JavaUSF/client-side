@@ -1,0 +1,79 @@
+/* 3 primary kinds of selectors in CSS */
+/* 1. Tag Selectors */
+
+/* Applies to every p tag */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* 2. ID Selectors */
+/* ID selectors select only elements with the provided ID.
+    As IDs are intended to be unique, they have a high specificity.
+    ID selectors use the # prefix before the ID name. */
+#primary {
+    font-weight: bold;
+}
+
+/* 3. Class Selectors */
+/* Class selectors are used to define rules that can apply flexibly to many elements.
+    Classes are reusable. An element may have many classes, and those classes may be applied
+    to many elements.
+    Class selectors use the . prefix before the class name */
+.quote {
+    font-family: cursive;
+}
+
+/* Wildcard selector */
+* {
+    background: black;
+    color: white;
+}
+
+/* Combination Selectors */
+/* Select based on the relationship between 
+        elements /*
+
+/* 1. a > b */
+/* Child selectors - Selects only elements matching
+    b who are the direct child of an element matching a */
+section > p {
+    color: pink;
+}
+
+/* 2. a b */
+/* Descendant selector - Selects any b that is anywhere
+    within an a.*/
+section p {
+    font-style: italic;
+}
+
+/* 3. ab */
+/* Intersection selector - Selects any a that is also b. */
+section#good-section {
+    font-size: 50px;
+}
+
+/* 4. a,b /*
+/* Union selector (or multiselector) */
+.a, .b {
+    color: yellow;
+}
+
+
+.my-class {
+    color: blue;
+}
+
+#my-id {
+    color: green;
+}
+
+/* Attribute Selector */
+/* a[k=v] or a[k] 
+    selects elements which have the
+    attribute k with the value v or just
+    a declaration of attribute k */
+input[name="first-name"] {
+    background-color: green;
+}

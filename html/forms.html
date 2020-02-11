@@ -13,14 +13,30 @@
     form - meaning that values placed on those input elements
     will be submitted together -->
 
-    <form>
+    <form action="./forms.html" method="POST">
+
+        <!--
+            Http Request contains several sections
+            One of those sections is the body - which is a section containing
+            request content.
+            Another section is the request URL - the location of the resource
+            on the internet or other network (or file system)
+
+            GET requests do not have a body.  Request data is embedded in the URL
+            as query parameters (google.com?key=value&key2=value2&...)
+            POST requests do have a body, and values will be embedded in the body.
+
+            protocol
+            |      |   URL   |  URI | query parameters
+            http://google.com/search?q=cat
+        -->
         <!-- The input tag is a broad category of input elements
             that are defined by a type attribute. The input
             from the user is represented by the value. So you
             can set a default value using the value attribute. -->
         <h1>Login</h1>
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="password" placeholder="Password">
 
         <input type="color">
         <input type="file">
@@ -41,13 +57,13 @@
         <fieldset>
             <legend>Liked Fruit</legend>
             <label for="check-kiwi">Kiwi</label>
-            <input name="liked-fruit" id="check-kiwi" type="checkbox">
+            <input name="check-kiwi" id="check-kiwi" type="checkbox">
             <label for="check-banana">Banana</label>
-            <input name="liked-fruit" id="check-banana" type="checkbox">
+            <input name="check-banana" id="check-banana" type="checkbox">
             <label for="check-apple">Apple</label>
-            <input name="liked-fruit" id="check-apple" type="checkbox">
+            <input name="check-apple" id="check-apple" type="checkbox">
             <label for="check-orange">Orange</label>
-            <input name="liked-fruit" id="check-orange" type="checkbox">
+            <input name="check-orange" id="check-orange" type="checkbox">
         </fieldset>
 
         <select name="drop-down-fruit">
@@ -56,6 +72,8 @@
             <option value="kiwi">Kiwi</option>
             <option value="orange">Orange</option>
         </select>
+
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
