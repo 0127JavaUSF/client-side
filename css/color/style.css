@@ -1,0 +1,45 @@
+/*! Color in CSS */
+
+/* Color can be applied in many different properties */
+/* The two most common will be 
+    1. background-color
+    2. color
+
+    Many other properties will include color such as borders,
+    box-shadow, text-shadow, etc.
+    /*
+
+/*! Color Values */
+/* Colors can be described in many different ways */
+/* 1. literals */
+
+p {
+    color: grey;
+    background-color: darkgrey;
+}
+/* 2. Hexadecimal */
+/*  Hex is a number format in base 16. 0123456789ABCDEF */
+/* Colors themselves are frequently represented as numbers 0-255 */
+/* 16^2 = 256
+    Color channels in hex match these colors #RRGGBB
+    Example: #CCCCCC
+    #C829BC
+*/
+p {
+    color: #FF0000;
+}
+
+/* 3. RGB */
+p {
+    color: rgb(255, 0, 0);
+}
+
+/* 4. RGBA - RGB + Alpha - Alpha channel for opacity 0-1 */
+p {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+/* 5. hsl - Hue-Saturation-Lightness */
+p {
+    color: hsl(220deg, 50%, 50%);
+}

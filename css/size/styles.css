@@ -1,0 +1,47 @@
+/*
+    Units of size in CSS
+
+    1. px - pixels (really, virtual pixels)
+    2. % - Percentage of the space allowed by the containing element
+            Good for sizing boxes, not so much for text.
+    3. em - Stands for the size of the letter M. Relative to the containing
+            element.
+    4. rem - Relative ems.  Relative to the root sizing.
+    5. vh - View Height - Height of the viewport in units of 1/100
+    6. vw - View Width - Width of the viewport in units of 1/100
+    7. vmax - Greater of View Height or View Width in units of 1/100
+    8. vmin - Lesser of View Height or View Width in units of 1/100
+*/
+
+#a {
+
+    font-size: 30px;
+}
+
+#b, #c {
+    font-size: 0.5rem;
+}
+
+html {
+    font-size: 30px;
+}
+
+#b {
+    font-size: 0.75em;
+    width: 100vw;
+    background-color: green;
+}
+
+#c {
+    background-color: blue;
+    width: 50vw;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}

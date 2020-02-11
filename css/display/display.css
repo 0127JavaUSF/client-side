@@ -1,0 +1,40 @@
+/*! Element Display */
+
+/* An element's display property affects how the browser renders it and
+positions it relative to other content.  By default, nearly ever element falls
+into two categories - block and inline. */
+
+p {
+    display: block;
+}
+
+/* Most structural elements are block types while text (inline text, like em, a, strong)
+    are in inline */
+
+/* Block elements have a few behavioral quirks:
+    1. They automatically take up the full width of their container.
+    2. They will not want to sit horizontally aligned with one another.
+*/
+
+/* Inline elements sit inline with one another along a baseline (or positioned
+    relative to the baseline. Inline elements are expected to flow and wrap
+    like text. */
+
+.a {
+    background: red;
+    height: 50px;
+}
+
+.b {
+    background: green;
+    height: 50px;
+}
+
+.c {
+    background: blue;
+    height: 50px;
+}
+
+img {
+    display: block;
+}
