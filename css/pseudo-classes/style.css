@@ -1,0 +1,60 @@
+html, body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    transition: all 250ms linear;
+    cursor: pointer;
+}
+
+.box:hover {
+    height: 150px;
+    width: 150px;
+    background-color: green;
+}
+
+.box:focus {
+    background-color: blue;
+    transform: rotate(360deg);
+}
+
+.box:active {
+    background-color: yellow;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.check {
+    background: black;
+    height: 100px;
+    width: 100px;
+}
+
+.check:nth-child(even) {
+    background: white;
+}
+
+.check:nth-child(4n) {
+    background: green;
+}
+
+.check:empty::after {
+    content: "I'm empty";
+}
+
