@@ -1,0 +1,46 @@
+const abby = {
+    firstName: 'Abby'
+    sayHello: function() {
+VM987:3 Uncaught SyntaxError: Unexpected identifier
+const abby = {
+    firstName: 'Abby'
+    sayHello: function() {
+        console.log(`I'm ${this.firstName});
+}
+}
+VM1145:3 Uncaught SyntaxError: Unexpected identifier
+const abby = {
+    firstName: 'Abby'
+    sayHello: function() {
+        console.log(`I'm ${this.firstName}`);
+}
+}
+VM1165:3 Uncaught SyntaxError: Unexpected identifier
+const abby = {
+    firstName: 'Abby',
+    sayHello: function() {
+        console.log(`I'm ${this.firstName}`);
+}
+}
+undefined
+abby.sayHello();
+VM1175:4 I'm Abby
+undefined
+setTimeout(abby.sayHello, 1000);
+1
+VM1175:4 I'm undefined
+setTimeout(() => abby.sayHello(), 1000);
+2
+VM1175:4 I'm Abby
+abby.sayHello = function() {
+    console.log(this);
+}
+ƒ () {
+    console.log(this);
+}
+setTimeout(abby.sayHello, 1000);
+3
+VM1657:2 Window {parent: Window, opener: null, top: Window, length: 0, frames: Window, …}
+setTimeout(() => abby.sayHello(), 1000);
+4
+VM1657:2 {firstName: "Abby", sayHello: ƒ}
