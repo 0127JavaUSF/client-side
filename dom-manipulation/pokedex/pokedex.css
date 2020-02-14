@@ -1,0 +1,77 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    min-height: 100vh;
+}
+
+body {
+    background: red;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    color: yellow;
+    text-shadow: 1px 1px 0 blue,
+        1px -1px 0 blue,
+        -1px 1px 0 blue,
+        -1px -1px 0 blue,
+        5px 5px 3px black;
+    
+}
+
+#poke-img {
+    background: white;
+    height: 200px;
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#poke-caption {
+    font-size: 2rem;
+    text-align: center;
+    color: yellow;
+    margin-top: 10px;
+    text-shadow: 1px 1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        -1px -1px 0 black
+}
+
+figure {
+    width: 400px;
+    margin: 0 auto;
+    flex-grow: 1;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+form > * {
+    font-size: 1.25rem;
+    margin: 5px;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.poke-type {
+    font-size: 0.8rem;
+    padding: 2px;
+    border: 1px solid yellow;
+    margin: -12px 4px 4px;
+    text-shadow: none;
+}
