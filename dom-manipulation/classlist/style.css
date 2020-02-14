@@ -1,0 +1,21 @@
+.site-header {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    transition: all 500ms ease-in-out; 
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.green {
+    color: green;
+}
+
+.big {
+    font-size: 10rem;
+}

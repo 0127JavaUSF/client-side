@@ -1,0 +1,30 @@
+html, body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#clicky-counter {
+    border: 1px solid black;
+    height: 75px;
+    min-width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clicky-button {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
