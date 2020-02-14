@@ -1,0 +1,46 @@
+h1 {
+    text-align: center;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-container {
+    min-height: 45vh;
+}
+
+input, button {
+    font-size: 1.25rem;
+}
+
+.todo-item {
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: pink;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+    min-width: 150px;
+    transition: all 100ms linear;
+    box-shadow: 5px 3px 0 0;
+}
+
+.todo-item:hover {
+    border-color: yellow;
+}
+
+.todo-item:active {
+    margin: 15px 10px 10px 15px;
+    box-shadow: 0 0 0 0;
+}

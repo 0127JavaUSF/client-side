@@ -1,0 +1,18 @@
+div.active {
+    background: rgba(0, 0, 255, 0.25);
+}
+
+div {
+    height: 450px;
+    width: 450px;
+    border: 1px solid black;
+    background: rgba(255, 0, 0, 0.25);
+}
+
+div > div {
+    /* This is how you horizontally center a block element */
+    margin: calc(10% - 2px) auto;
+    height: 80%;
+    width: 80%;
+}
+
